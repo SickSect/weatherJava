@@ -20,8 +20,6 @@ public class Main {
         Element pressure = tableWeather.select("div[class=weather-item weather-pressure]").first();
         Element temperature = page.getElementsByClass("unit unit_temperature_c").first();
         Element event = tableWeather.select("div[class=weather-description]").first();
-        //String date = "";
-
         System.out.println(pars.getDate(date.text()));
         System.out.println(pars.getWind(wind.text()));
         System.out.println(pars.getTemp(temperature.text()));
